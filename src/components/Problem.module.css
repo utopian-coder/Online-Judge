@@ -1,0 +1,19 @@
+.problem-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.example {
+  padding: 1rem;
+  background-color: rgb(248, 246, 246);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.example-heading {
+  font-weight: 500;
+}
