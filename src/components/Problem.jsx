@@ -9,9 +9,7 @@ const Problem = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get(
-          "http://localhost:4000/api/v1/problems"
-        );
+        const { data } = await axios.get("/problems");
 
         if (data.status != "success") {
           return (

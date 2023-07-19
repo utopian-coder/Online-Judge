@@ -26,10 +26,7 @@ int sum(int a, int b)
     };
 
     try {
-      const { data } = await axios.post(
-        "http://127.0.0.1:4000/api/v1/users",
-        payload
-      );
+      const { data } = await axios.post("/users", payload);
 
       if (data.status == "success") setOutput(data.data);
       if (data.status == "fail") setIsError(data.message);
